@@ -1,0 +1,559 @@
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('fonts/ProximaNova-Regular.woff2') format('woff2'),
+    url('fonts/ProximaNova-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Use it like this: */
+body {
+  font-family: 'Proxima Nova', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.home {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav {
+  width: 99vw;
+  height: 10vh;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  color: white;
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+  border: 1px solid rgba(255, 255, 255, 0.274);
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.082);
+  position: sticky;
+  top: 0px;
+}
+
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 25px;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  font-size: 22px;
+  padding-right: 30px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu a:hover {
+  color: rgb(180, 131, 149);
+  font-size: 25px;
+}
+
+.menu a.active {
+  color: rgb(180, 131, 149);
+}
+
+
+.logo {
+  font-size: 30px;
+  padding-left: 20px;
+  letter-spacing: 2px;
+}
+
+section {
+  background-color: black;
+  width: 99vw;
+  height: 100vh;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: white;
+}
+
+.img {
+  width: 600px;
+}
+
+.text {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  line-height: 60px;
+  justify-content: center;
+  align-items: center;
+  width: 35vw;
+  height: 50vh;
+  background: rgba(31, 30, 30, 0.274);
+  backdrop-filter: blur(8px);
+  z-index: 20;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.274);
+  box-shadow: 0 15px 20px rgba(215, 213, 213, 0.082);
+  letter-spacing: 2px;
+}
+
+.hello {
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.name {
+  font-size: 50px;
+  color: rgb(180, 131, 149);
+}
+
+.dev {
+  font-size: 30px;
+}
+
+.about-container {
+  width: 80vw;
+  color: white;
+  background: rgba(31, 30, 30, 0.274);
+  backdrop-filter: blur(8px);
+  z-index: 20;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.274);
+  box-shadow: 0 15px 20px rgba(215, 213, 213, 0.082);
+  font-size: 20px;
+  padding: 50px;
+  word-wrap: break-word;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  overflow: hidden;
+}
+
+.about-title {
+  font-size: 35px;
+  margin-bottom: 40px;
+  color: rgb(180, 131, 149);
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-text {
+  line-height: 25px;
+}
+
+.text-name {
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(180, 131, 149);
+}
+
+.img2 {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.edu-container {
+  width: 60vw;
+  color: white;
+  background: rgba(31, 30, 30, 0.274);
+  backdrop-filter: blur(8px);
+  z-index: 20;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.274);
+  box-shadow: 0 15px 20px rgba(215, 213, 213, 0.082);
+  font-size: 18px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.education {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.edu-title {
+  font-size: 35px;
+  font-weight: bold;
+  color: rgb(180, 131, 149);
+  margin-bottom: 20px;
+}
+
+.edu-data {
+  font-size: 20px;
+}
+
+.edu-deg {
+  font-weight: bold;
+  color: rgb(175, 134, 149);
+  font-size: 24px;
+}
+
+.contact-main {
+  width: 90vw;
+}
+
+.contact-main {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10vw;
+}
+
+.contact-data {
+  width: 30vw;
+  background: rgba(31, 30, 30, 0.274);
+  backdrop-filter: blur(8px);
+  z-index: 20;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.274);
+  box-shadow: 0 15px 20px rgba(215, 213, 213, 0.082);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.data-title {
+  color: rgb(175, 134, 149);
+  font-size: 30px;
+}
+
+hr {
+  width: 30vw;
+}
+
+.mail-logo {
+  width: 100px;
+}
+
+.data {
+  display: flex;
+  align-items: center;
+}
+
+.d-t {
+  font-size: 20px;
+}
+
+.linked-logo {
+  width: 70px;
+  height: 55px;
+}
+
+.data a {
+  text-decoration: none;
+  color: white;
+}
+
+.data a:hover {
+  color: rgb(175, 134, 149);
+}
+
+.contact-form {
+  width: 40vw;
+  background: rgba(31, 30, 30, 0.274);
+  backdrop-filter: blur(8px);
+  z-index: 20;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.274);
+  box-shadow: 0 15px 20px rgba(215, 213, 213, 0.082);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.contact-form input,
+textarea {
+  width: 30vw;
+  height: 5vh;
+  background: rgba(31, 30, 30, 0.274);
+  backdrop-filter: blur(8px);
+  z-index: 20;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.274);
+  box-shadow: 0 15px 20px rgba(215, 213, 213, 0.082);
+}
+
+.contact-form ::placeholder {
+  color: white;
+  padding: 20px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.contact-form textarea {
+  height: 20vh;
+}
+
+.contact-btn {
+  height: 6vh;
+  width: 30vw;
+  border-radius: 20px;
+  background-color: rgb(175, 134, 149);
+  font-weight: bold;
+}
+
+.contact-btn:hover {
+  cursor: pointer;
+}
+
+.contact-title {
+  color: rgb(175, 134, 149);
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.skill-title {
+  color: rgb(175, 134, 149);
+  font-weight: bold;
+  font-size: 30px;
+  padding: 20px;
+}
+
+.skills{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.skill-container {
+  width: 70vw;
+  background: rgba(31, 30, 30, 0.274);
+  backdrop-filter: blur(8px);
+  z-index: 20;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.274);
+  box-shadow: 0 15px 20px rgba(215, 213, 213, 0.082);
+  display: flex;
+  padding: 30px;
+  gap:40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.skill-logo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.s-logo{
+  width: 170px;
+}
+.react{
+  width: 90px;
+}
+.sql{
+  width: 110px;
+}
+.mongo{
+  width: 111px;
+}
+.java{
+  width: 150px;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav {
+    height: 5vh;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 55%;
+    padding: 30px;
+    background: black;
+    width: 30vw;
+    text-align: center;
+    backdrop-filter: blur(8px);
+    z-index: 20;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.274);
+    box-shadow: 0 15px 20px rgba(215, 213, 213, 0.082);
+    letter-spacing: 2px;
+  }
+
+  section {
+    height: auto;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .home {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 2px;
+    height: 100vh;
+  }
+
+  .img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .text {
+    width: 60vw;
+    height: 30vh;
+  }
+
+  .hello {
+    font-size: 20px;
+    line-height: 45px;
+  }
+
+  .name {
+    font-size: 35px;
+    line-height: 20px;
+  }
+
+  .dev {
+    font-size: 25px;
+  }
+
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 60vw;
+    z-index: 50;
+  }
+
+  .about-text,
+  .text-name {
+    font-size: 15px;
+  }
+
+  .about-title {
+    font-size: 25px;
+  }
+
+  .img2 {
+    height: 40vh;
+  }
+
+  .edu-data {
+    font-size: 17px;
+  }
+
+  .edu-deg {
+    font-size: 20px;
+  }
+
+  .edu-title {
+    font-size: 30px;
+  }
+
+  .contact-main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-form {
+    width: 65vw;
+  }
+
+  .contact-form input,
+  textarea {
+    width: 50vw;
+  }
+
+  .contact-btn {
+    width: 50vw;
+  }
+
+  .contact-data {
+    width: 65vw;
+    margin-bottom: 100px;
+  }
+
+  hr {
+    width: 65vw;
+  }
+
+  
+  .skill-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  .skill-logo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  margin-bottom: 30px;
+}
+.s-logo{
+  width: 110px;
+}
+.react{
+  width: 65px;
+  
+}
+.sql{
+  width: 90px;
+}
+.mongo{
+  width: 90px;
+}
+.java{
+  width: 150px;
+  height: 80px;
+}
+.php{
+  height: 70px;
+}
+
+
+}
